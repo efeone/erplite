@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include erplite *.css
+recursive-include erplite *.csv
+recursive-include erplite *.html
+recursive-include erplite *.ico
+recursive-include erplite *.js
+recursive-include erplite *.json
+recursive-include erplite *.md
+recursive-include erplite *.png
+recursive-include erplite *.py
+recursive-include erplite *.svg
+recursive-include erplite *.txt
+recursive-exclude erplite *.pyc

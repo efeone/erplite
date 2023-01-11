@@ -1,0 +1,22 @@
+{
+ "creation": "2023-01-10 10:37:03.173229",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "document_type": "Leave Application",
+ "filters_json": "null",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "Total Leave taken",
+ "method": "erplite.erplite.utils.total_leave_taken_for_employee",
+ "modified": "2023-01-11 10:07:09.713657",
+ "modified_by": "Administrator",
+ "module": "ERPLite",
+ "name": "Total Leave taken",
+ "owner": "Administrator",
+ "report_function": "Sum",
+ "show_percentage_stats": 1,
+ "stats_time_interval": "Daily",
+ "type": "Custom"
+}

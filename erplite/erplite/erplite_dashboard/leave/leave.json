@@ -1,0 +1,34 @@
+{
+ "cards": [
+  {
+   "card": "Last on Leave"
+  },
+  {
+   "card": "Approved Leave"
+  },
+  {
+   "card": "Total Leave taken"
+  },
+  {
+   "card": "Remaining Leaves"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Employee Leave Balance Summary",
+   "width": "Full"
+  }
+ ],
+ "creation": "2023-01-09 13:17:12.827122",
+ "dashboard_name": "Leave",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2023-01-11 11:18:10.951644",
+ "modified_by": "Administrator",
+ "module": "ERPLite",
+ "name": "Leave",
+ "owner": "Administrator"
+}

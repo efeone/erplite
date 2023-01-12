@@ -190,3 +190,7 @@ doc_events = {
 # auth_hooks = [
 #	"erplite.auth.validate"
 # ]
+
+fixtures = [
+		{"dt": "Role", "filters": [["name", "in", ["Changemaker User"]]]}
+	]

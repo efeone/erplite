@@ -22,16 +22,22 @@ def get_columns():
 def get_data(filters):
 	data=[]
 	if not filters.get('employee'):
-		if not filters.get('user'):
-			data = prepare_data_for_all_employees()
-		else:
-			if filters.get('user') != 'Administrator':
-				employee_id = get_employee_id_from_user(filters.get('user'))
-				if employee_id:
-					row = prepare_data_for_employee(employee_id)
-					data.append(row)
-			else:
+		if frappe.session.user:
+			user_id = frappe.session.user
+			if user_id == 'Administrator':
 				data = prepare_data_for_all_employees()
+			else:
+				if 'HR Manager' in frappe.get_roles(user_id):
+					data = prepare_data_for_all_employees()
+				else:
+					employee_id = get_employee_id_from_user(user_id)
+					if employee_id:
+						reports_to = get_reports_to_employees(employee_id)
+						reports_to.append({ 'name': employee_id })
+						if reports_to:
+							for employee in reports_to:
+								row = prepare_data_for_employee(employee.get('name'))
+								data.append(row)
 	else:
 		employee_id = filters.get('employee')
 		row = prepare_data_for_employee(employee_id)
@@ -64,3 +70,8 @@ def prepare_data_for_employee(employee_id):
 		remaining_leaves
 	]
 	return row
+
+def get_reports_to_employees(employee_id):
+	''' Method to get all employees who are reporting to this employee '''
+	reports_to = frappe.db.get_all("Employee", filters={"reports_to": employee_id, "status": "Active"})
+	return reports_to

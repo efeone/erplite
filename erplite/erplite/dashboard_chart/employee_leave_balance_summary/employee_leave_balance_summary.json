@@ -1,7 +1,7 @@
 {
  "chart_name": "Employee Leave Balance Summary",
  "chart_type": "Report",
- "creation": "2023-01-11 11:17:06.066097",
+ "creation": "2023-01-24 09:29:30.997239",
  "docstatus": 0,
  "doctype": "Dashboard Chart",
  "dynamic_filters_json": "{}",
@@ -10,7 +10,7 @@
  "idx": 0,
  "is_public": 1,
  "is_standard": 1,
- "modified": "2023-01-18 09:17:39.515473",
+ "modified": "2023-01-24 09:29:43.301195",
  "modified_by": "Administrator",
  "module": "ERPLite",
  "name": "Employee Leave Balance Summary",
@@ -27,11 +27,11 @@
  "y_axis": [
   {
    "color": "#CB2929",
-   "y_field": "last_on_leave"
+   "y_field": "days_since_last_leave"
   },
   {
    "color": "#29CD42",
-   "y_field": "approved_leave"
+   "y_field": "upcomming_approved_leaves"
   },
   {
    "color": "#761ACB",

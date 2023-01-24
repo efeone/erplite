@@ -13,8 +13,8 @@ def get_columns():
 	return[
 		_("Employee") + ":Link/Employee:200",
 		_("Employee Name") + ":Data:150",
-		_("Last on Leave") + ":Int:150",
-		_("Approved Leave") + ":Int:150",
+		_("Days since last Leave") + ":Int:200",
+		_("Upcomming Approved Leaves") + ":Int:250",
 		_("Total Leave taken") + ":Int:150",
 		_("Remaining Leaves") + ":Int:150",
 	]

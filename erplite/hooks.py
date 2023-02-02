@@ -31,6 +31,7 @@ app_license = "MIT"
 # include js in doctype views
 doctype_js = {
         "Leave Application" : "public/js/leave_application.js",
+        "Expense Claim" : "public/js/expense_claim.js",
     }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
@@ -107,6 +108,11 @@ doctype_js = {
 doc_events = {
 	"Leave Application": {
 		"validate": "erplite.erplite.docevents.leave_application_validate",
+	},
+    "Expense Claim": {
+		"validate": "erplite.erplite.docevents.expense_claim_validate",
+        "on_submit": "erplite.erplite.docevents.expense_claim_on_submit",
+        "on_update_after_submit": "erplite.erplite.docevents.expense_claim_on_update_after_submit"
 	}
 }
 
@@ -192,5 +198,9 @@ doc_events = {
 # ]
 
 fixtures = [
-		{"dt": "Role", "filters": [["name", "in", ["Changemaker User"]]]}
+		{"dt": "Role", "filters": [["name", "in", ["Changemaker User"]]]},
+        {"dt": "Email Template", "filters": [["name", "in", ["Expense Claim Status Notification", "Expense Claim Approval Notification"]]]},
+        {"dt": "Workflow State", "filters": [["name", "in", ["Pending", "Payment Done", "Rejected", "Approved"]]]},
+        {"dt": "Workflow", "filters": [["name", "in", ["Expense Claim"]]]},
+
 	]

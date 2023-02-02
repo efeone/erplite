@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestWorkspaceSettings(FrappeTestCase):
+class TestERPLiteSettings(FrappeTestCase):
 	pass

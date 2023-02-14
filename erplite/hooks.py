@@ -115,6 +115,10 @@ doc_events = {
 		"validate": "erplite.erplite.docevents.expense_claim_validate",
         "on_submit": "erplite.erplite.docevents.expense_claim_on_submit",
         "on_update_after_submit": "erplite.erplite.docevents.expense_claim_on_update_after_submit"
+	},
+    "Bank Account": {
+		"on_update": "erplite.erplite.docevents.set_bank_account_count",
+		"on_trash": "erplite.erplite.docevents.set_bank_account_count"
 	}
 }
 

@@ -73,3 +73,27 @@ def notify(self, args):
         frappe.msgprint(_("Email sent to {0}").format(contact))
     except frappe.OutgoingEmailError:
         pass
+
+@frappe.whitelist()
+def set_bank_account_count(doc, method):
+    no_of_local_accounts = 0
+    no_of_fcra_accounts = 0
+    total_count = 0
+    company = frappe.defaults.get_user_default("Company")
+    if company:
+        total_count = get_bank_account_count()
+        no_of_fcra_accounts = get_bank_account_count('FCRA Account')
+        no_of_local_accounts = get_bank_account_count('Local Currency Account')
+        frappe.db.set_value('Company', company, 'no_of_local_accounts', no_of_local_accounts, update_modified=False)
+        frappe.db.set_value('Company', company, 'no_of_fcra_accounts', no_of_fcra_accounts, update_modified=False)
+        frappe.db.set_value('Company', company, 'total_number_of_bank_accounts', total_count, update_modified=False)
+
+@frappe.whitelist()
+def get_bank_account_count(account_type=None):
+    count = 0
+    if account_type:
+        if frappe.db.exists('Bank Account', { 'account_type': account_type }):
+            count = frappe.db.count('Bank Account', { 'account_type': account_type })
+    else:
+        count = frappe.db.count('Bank Account')
+    return count

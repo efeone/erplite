@@ -1,0 +1,16 @@
+[
+ {
+  "account_type": "Local Currency Account",
+  "docstatus": 0,
+  "doctype": "Bank Account Type",
+  "modified": "2023-02-09 15:20:31.270542",
+  "name": "Local Currency Account"
+ },
+ {
+  "account_type": "FCRA Account",
+  "docstatus": 0,
+  "doctype": "Bank Account Type",
+  "modified": "2023-02-09 15:20:45.779900",
+  "name": "FCRA Account"
+ }
+]

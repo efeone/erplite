@@ -66,3 +66,25 @@ def get_employee_id_from_user(user_id=None):
     if frappe.db.exists('Employee', { 'user_id': user_id }):
         employee_id = frappe.db.get_value('Employee', { 'user_id': user_id }, 'name')
     return employee_id
+
+@frappe.whitelist()
+def change_compliance_status(self):
+    '''Method to change Status of Compliance'''
+    if self.status == 'Open':
+        current_date = getdate(today())
+        due_date = getdate(self.due_date)
+        if current_date >= due_date:
+            frappe.db.set_value(self.doctype, self.name, 'status', 'Overdue')
+            frappe.db.commit()
+
+@frappe.whitelist()
+def create_notification_log(subject, for_user, email_content, document_type, document_name):
+    notification_doc = frappe.new_doc('Notification Log')
+    notification_doc.subject = subject
+    notification_doc.type = 'Mention'
+    notification_doc.for_user = for_user
+    notification_doc.email_content = email_content
+    notification_doc.document_type = document_type
+    notification_doc.document_name = document_name
+    notification_doc.save()
+    frappe.db.commit()

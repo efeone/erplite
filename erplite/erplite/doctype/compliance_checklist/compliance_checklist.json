@@ -1,0 +1,194 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-02-14 09:07:26.821446",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "subject",
+  "description",
+  "status",
+  "column_break_3",
+  "posting_date",
+  "has_due_date",
+  "due_date",
+  "applicable_act",
+  "compliance_type",
+  "form_type",
+  "reminder_or_notifications_section",
+  "remind_before_unit",
+  "remind_before",
+  "role_to_notify",
+  "column_break_32swc",
+  "repeat_this_checklist",
+  "repeat_on",
+  "repeat_till"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "CCL.#####",
+   "read_only": 1
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Subject ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Due Date",
+   "mandatory_depends_on": "has_due_date"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Now",
+   "fieldname": "posting_date",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "remind_before_unit",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Remind Before Unit ",
+   "options": "\nDay\nMonth",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.remind_before_unit",
+   "fieldname": "remind_before",
+   "fieldtype": "Int",
+   "label": "Remind Before",
+   "mandatory_depends_on": "eval:doc.remind_before_unit"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Open\nCancelled\nOverdue\nOn Hold\nCompleted"
+  },
+  {
+   "default": "0",
+   "fieldname": "repeat_this_checklist",
+   "fieldtype": "Check",
+   "label": "Repeat This Checklist"
+  },
+  {
+   "depends_on": "repeat_this_checklist",
+   "fieldname": "repeat_on",
+   "fieldtype": "Select",
+   "label": "Repeat On",
+   "mandatory_depends_on": "repeat_this_checklist",
+   "options": "\nDaily\nWeekly\nMonthly\nQuarterly\nHalf yearly\nYearly\nEvent Based"
+  },
+  {
+   "depends_on": "repeat_this_checklist",
+   "description": "Leave blank to repeat always",
+   "fieldname": "repeat_till",
+   "fieldtype": "Date",
+   "label": "Repeat Till"
+  },
+  {
+   "fieldname": "role_to_notify",
+   "fieldtype": "Link",
+   "label": "Role to Notify",
+   "options": "Role"
+  },
+  {
+   "fieldname": "compliance_type",
+   "fieldtype": "Select",
+   "label": "Compliance Type",
+   "options": "\nGeneral Compliances\nEvent Based Compliances\nStatutory Compliances\nOthers"
+  },
+  {
+   "fieldname": "reminder_or_notifications_section",
+   "fieldtype": "Section Break",
+   "label": "Reminder/Notifications"
+  },
+  {
+   "fieldname": "column_break_32swc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "applicable_act",
+   "fieldtype": "Link",
+   "label": "Applicable Act",
+   "options": "Legal Act"
+  },
+  {
+   "fieldname": "form_type",
+   "fieldtype": "Link",
+   "label": "Form Type",
+   "options": "Form Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "has_due_date",
+   "fieldtype": "Check",
+   "label": "Has Due Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-17 12:34:46.654667",
+ "modified_by": "Administrator",
+ "module": "ERPLite",
+ "name": "Compliance Checklist",
+ "name_case": "Title Case",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Compliance User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "subject"
+}

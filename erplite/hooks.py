@@ -125,6 +125,15 @@ doc_events = {
 # Scheduled Tasks
 # ---------------
 
+scheduler_events = {
+	"daily": [
+		"erplite.erplite.doctype.compliance_checklist.compliance_checklist.daily_compliance_scheduler"
+	],
+    "monthly": [
+		"erplite.erplite.doctype.compliance_checklist.compliance_checklist.monthly_compliance_scheduler"
+	]
+}
+
 # scheduler_events = {
 #	"all": [
 #		"erplite.tasks.all"
@@ -204,9 +213,9 @@ doc_events = {
 # ]
 
 fixtures = [
-		{"dt": "Role", "filters": [["name", "in", ["Changemaker User"]]]},
+		{"dt": "Role", "filters": [["name", "in", ["Changemaker User", "Compliance User"]]]},
         {"dt": "Email Template", "filters": [["name", "in", ["Expense Claim Status Notification", "Expense Claim Approval Notification"]]]},
         {"dt": "Workflow State", "filters": [["name", "in", ["Pending", "Payment Done", "Rejected", "Approved"]]]},
         {"dt": "Workflow", "filters": [["name", "in", ["Expense Claim"]]]},
-
+		{"dt": "Bank Account Type", "filters": [["name", "in", ["FCRA Account", "Local Currency Account"]]]},
 	]

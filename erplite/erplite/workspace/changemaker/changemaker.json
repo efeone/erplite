@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Changemaker</b></span><span class=\\\"h4\\\"><b></b></span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Expense Claim\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Leave Application\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Holiday List\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Attendance Request\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Dashboards</b></span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Attendance Dashboard\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Project Dashboard\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Leave Dashboard\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Expense Claims Dashboard\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Reports &amp; Masters</b></span>\",\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Projects\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Leave\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Claims\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Attendance\",\"col\":4}}]",
+ "content": "[{\"id\":\"kIAm94VUw0\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Changemaker</b></span><span class=\\\"h4\\\"><b></b></span>\",\"col\":12}},{\"id\":\"R8waE-5xvT\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Expense Claim\",\"col\":3}},{\"id\":\"nPti0ZJrX_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Leave Application\",\"col\":3}},{\"id\":\"HVlKMD6e_F\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Attendance\",\"col\":3}},{\"id\":\"PY__fQJDfO\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Holiday List\",\"col\":3}},{\"id\":\"xibdohvn0l\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"YTk_B9Llgy\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Dashboards</b></span>\",\"col\":12}},{\"id\":\"TsEGq6sghF\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Attendance Dashboard\",\"col\":3}},{\"id\":\"96WrCAZ7Cd\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Project Dashboard\",\"col\":3}},{\"id\":\"NmzGxj8y0P\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Leave Dashboard\",\"col\":3}},{\"id\":\"9lxtGF7HKh\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Expense Claims Dashboard\",\"col\":3}},{\"id\":\"8bDZMefej0\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Compliance Dashboard\",\"col\":3}},{\"id\":\"3P_95Wm32Z\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"uG3ocHYFvU\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Reports &amp; Masters</b></span>\",\"col\":12}},{\"id\":\"k_UhNB0a-J\",\"type\":\"card\",\"data\":{\"card_name\":\"Projects\",\"col\":4}},{\"id\":\"W_UIfpnZZQ\",\"type\":\"card\",\"data\":{\"card_name\":\"Leave\",\"col\":4}},{\"id\":\"uGuogfg7wb\",\"type\":\"card\",\"data\":{\"card_name\":\"Claims\",\"col\":4}},{\"id\":\"Wv6aceG5Mf\",\"type\":\"card\",\"data\":{\"card_name\":\"Attendance\",\"col\":4}},{\"id\":\"BYh2t1ZRzV\",\"type\":\"card\",\"data\":{\"card_name\":\"Compliances\",\"col\":4}}]",
  "creation": "2023-01-12 09:34:39.795491",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -61,7 +61,7 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 0,
+   "is_query_report": 1,
    "label": "Delayed Tasks Summary",
    "link_count": 0,
    "link_to": "Delayed Tasks Summary",
@@ -110,34 +110,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Attendance",
-   "link_count": 2,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Monthly Attendance Sheet",
-   "link_count": 0,
-   "link_to": "Monthly Attendance Sheet",
-   "link_type": "Report",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Employees working on a holiday",
-   "link_count": 0,
-   "link_to": "Employees working on a holiday",
-   "link_type": "Report",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Claims",
    "link_count": 3,
    "onboard": 0,
@@ -172,9 +144,65 @@
    "link_type": "Report",
    "onboard": 1,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Attendance",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Monthly Attendance Sheet",
+   "link_count": 0,
+   "link_to": "Monthly Attendance Sheet",
+   "link_type": "Report",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Employees working on a holiday",
+   "link_count": 0,
+   "link_to": "Employees working on a holiday",
+   "link_type": "Report",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Compliances",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Compliance Checklist",
+   "link_count": 0,
+   "link_to": "Compliance Checklist",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Compliance Report",
+   "link_count": 0,
+   "link_to": "Compliance Report",
+   "link_type": "Report",
+   "onboard": 1,
+   "type": "Link"
   }
  ],
- "modified": "2023-02-03 09:58:16.157793",
+ "modified": "2023-02-22 12:17:42.036885",
  "modified_by": "Administrator",
  "module": "ERPLite",
  "name": "Changemaker",
@@ -191,8 +219,22 @@
   {
    "color": "Grey",
    "doc_view": "List",
+   "label": "Attendance",
+   "link_to": "Attendance",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
    "label": "Expense Claims Dashboard",
    "link_to": "Expense Claims",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Compliance Dashboard",
+   "link_to": "Compliance Dashboard",
    "type": "Dashboard"
   },
   {
@@ -231,13 +273,6 @@
    "label": "Project Dashboard",
    "link_to": "Project",
    "type": "Dashboard"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "List",
-   "label": "Attendance Request",
-   "link_to": "Attendance Request",
-   "type": "DocType"
   },
   {
    "color": "Green",

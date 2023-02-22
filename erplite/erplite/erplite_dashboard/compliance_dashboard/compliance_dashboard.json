@@ -1,0 +1,31 @@
+{
+ "cards": [
+  {
+   "card": "Open Compliance"
+  },
+  {
+   "card": "Overdue Compliance"
+  },
+  {
+   "card": "Completed Compliance"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Compliance Detail",
+   "width": "Full"
+  }
+ ],
+ "creation": "2023-02-22 09:16:45.089575",
+ "dashboard_name": "Compliance Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2023-02-22 09:57:09.143476",
+ "modified_by": "Administrator",
+ "module": "ERPLite",
+ "name": "Compliance Dashboard",
+ "owner": "Administrator"
+}

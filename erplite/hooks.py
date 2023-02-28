@@ -213,9 +213,9 @@ scheduler_events = {
 # ]
 
 fixtures = [
-		{"dt": "Role", "filters": [["name", "in", ["Changemaker User", "Compliance User"]]]},
+		{"dt": "Role", "filters": [["name", "in", ["Changemaker User", "Compliance User", 'Travel Request Approver']]]},
         {"dt": "Email Template", "filters": [["name", "in", ["Expense Claim Status Notification", "Expense Claim Approval Notification"]]]},
-        {"dt": "Workflow State", "filters": [["name", "in", ["Pending", "Payment Done", "Rejected", "Approved"]]]},
-        {"dt": "Workflow", "filters": [["name", "in", ["Expense Claim"]]]},
+        {"dt": "Workflow State", "filters": [["name", "in", ["Pending", "Payment Done", "Rejected", "Approved", 'Draft']]]},
+        {"dt": "Workflow", "filters": [["name", "in", ["Expense Claim", 'Travel Request']]]},
 		{"dt": "Bank Account Type", "filters": [["name", "in", ["FCRA Account", "Local Currency Account"]]]},
 	]

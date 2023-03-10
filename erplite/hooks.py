@@ -218,4 +218,5 @@ fixtures = [
         {"dt": "Workflow State", "filters": [["name", "in", ["Pending", "Payment Done", "Rejected", "Approved", 'Draft']]]},
         {"dt": "Workflow", "filters": [["name", "in", ["Expense Claim", 'Travel Request']]]},
 		{"dt": "Bank Account Type", "filters": [["name", "in", ["FCRA Account", "Local Currency Account"]]]},
+		{"dt": "Web Page", "filters": [["name", "in", ["t4g-labs"]]]},
 	]

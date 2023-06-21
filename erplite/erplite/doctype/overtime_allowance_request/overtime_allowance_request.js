@@ -3,7 +3,8 @@
 
 frappe.ui.form.on('Overtime Allowance Request', {
 	refresh: function(frm) {
-    if(frm.doc.docstatus == 1 && frm.doc.workflow_state == 'Approved' && frm.doc.leaves_allocated == 0){
+		let roles = frappe.user_roles;
+    if(frm.doc.docstatus == 1 && frm.doc.workflow_state == 'Approved' && frm.doc.leaves_allocated == 0 && roles.includes('HR Manager')){
       frm.add_custom_button('Allocate Additional Leaves', () => {
         allocate_additional_leave(frm);
       }).addClass("btn btn-primary");

@@ -213,10 +213,11 @@ scheduler_events = {
 # ]
 
 fixtures = [
-		{"dt": "Role", "filters": [["name", "in", ["Changemaker User", "Compliance User", 'Travel Request Approver']]]},
-        {"dt": "Email Template", "filters": [["name", "in", ["Expense Claim Status Notification", "Expense Claim Approval Notification"]]]},
-        {"dt": "Workflow State", "filters": [["name", "in", ["Pending", "Payment Done", "Rejected", "Approved", 'Draft']]]},
-        {"dt": "Workflow", "filters": [["name", "in", ["Expense Claim", 'Travel Request']]]},
-		{"dt": "Bank Account Type", "filters": [["name", "in", ["FCRA Account", "Local Currency Account"]]]},
+		{"dt": "Role", "filters": [["name", "in", ['Changemaker User', 'Compliance User', 'Travel Request Approver']]]},
+        {"dt": "Email Template", "filters": [["name", "in", ['Expense Claim Status Notification', 'Expense Claim Approval Notification']]]},
+        {"dt": "Workflow State", "filters": [["name", "in", ['Pending', 'Payment Done', 'Rejected', 'Approved', 'Draft']]]},
+        {"dt": "Workflow Action Master", "filters": [["name", "in", ['Make Payment']]]},
+        {"dt": "Workflow", "filters": [["name", "in", ['Expense Claim', 'Travel Request', 'Overtime Allowance Request']]]},
+		{"dt": "Bank Account Type", "filters": [["name", "in", ['FCRA Account', 'Local Currency Account']]]},
 		{"dt": "Web Page", "filters": [["name", "in", ["t4g-labs"]]]},
 	]

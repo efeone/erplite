@@ -1,7 +1,8 @@
 {
  "charts": [],
- "content": "[{\"id\":\"kIAm94VUw0\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Changemaker</b></span><span class=\\\"h4\\\"><b></b></span>\",\"col\":12}},{\"id\":\"R8waE-5xvT\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Expense Claim\",\"col\":3}},{\"id\":\"nPti0ZJrX_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Leave Application\",\"col\":3}},{\"id\":\"HVlKMD6e_F\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Attendance\",\"col\":3}},{\"id\":\"PY__fQJDfO\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Holiday List\",\"col\":3}},{\"id\":\"8tgrA_g9zq\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Travel Request\",\"col\":3}},{\"id\":\"xibdohvn0l\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"YTk_B9Llgy\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Dashboards</b></span>\",\"col\":12}},{\"id\":\"TsEGq6sghF\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Attendance Dashboard\",\"col\":3}},{\"id\":\"96WrCAZ7Cd\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Project Dashboard\",\"col\":3}},{\"id\":\"NmzGxj8y0P\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Leave Dashboard\",\"col\":3}},{\"id\":\"9lxtGF7HKh\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Expense Claims Dashboard\",\"col\":3}},{\"id\":\"8bDZMefej0\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Compliance Dashboard\",\"col\":3}},{\"id\":\"3P_95Wm32Z\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"uG3ocHYFvU\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Reports &amp; Masters</b></span>\",\"col\":12}},{\"id\":\"k_UhNB0a-J\",\"type\":\"card\",\"data\":{\"card_name\":\"Projects\",\"col\":4}},{\"id\":\"W_UIfpnZZQ\",\"type\":\"card\",\"data\":{\"card_name\":\"Leave\",\"col\":4}},{\"id\":\"uGuogfg7wb\",\"type\":\"card\",\"data\":{\"card_name\":\"Claims\",\"col\":4}},{\"id\":\"Wv6aceG5Mf\",\"type\":\"card\",\"data\":{\"card_name\":\"Attendance\",\"col\":4}},{\"id\":\"BYh2t1ZRzV\",\"type\":\"card\",\"data\":{\"card_name\":\"Compliances\",\"col\":4}}]",
+ "content": "[{\"id\":\"kIAm94VUw0\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Changemaker</b></span><span class=\\\"h4\\\"><b></b></span>\",\"col\":12}},{\"id\":\"bNfmS331ha\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee\",\"col\":3}},{\"id\":\"R8waE-5xvT\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Expense Claim\",\"col\":3}},{\"id\":\"nPti0ZJrX_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Leave Application\",\"col\":3}},{\"id\":\"HVlKMD6e_F\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Attendance\",\"col\":3}},{\"id\":\"PY__fQJDfO\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Holiday List\",\"col\":3}},{\"id\":\"8tgrA_g9zq\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Travel Request\",\"col\":3}},{\"id\":\"q3vTptt54_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Overtime Allowance Request\",\"col\":3}},{\"id\":\"xibdohvn0l\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"YTk_B9Llgy\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Dashboards</b></span>\",\"col\":12}},{\"id\":\"TsEGq6sghF\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Attendance Dashboard\",\"col\":3}},{\"id\":\"96WrCAZ7Cd\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Project Dashboard\",\"col\":3}},{\"id\":\"NmzGxj8y0P\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Leave Dashboard\",\"col\":3}},{\"id\":\"9lxtGF7HKh\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Expense Claims Dashboard\",\"col\":3}},{\"id\":\"8bDZMefej0\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Compliance Dashboard\",\"col\":3}},{\"id\":\"3P_95Wm32Z\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"uG3ocHYFvU\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Reports &amp; Masters</b></span>\",\"col\":12}},{\"id\":\"k_UhNB0a-J\",\"type\":\"card\",\"data\":{\"card_name\":\"Projects\",\"col\":4}},{\"id\":\"W_UIfpnZZQ\",\"type\":\"card\",\"data\":{\"card_name\":\"Leave\",\"col\":4}},{\"id\":\"uGuogfg7wb\",\"type\":\"card\",\"data\":{\"card_name\":\"Claims\",\"col\":4}},{\"id\":\"Wv6aceG5Mf\",\"type\":\"card\",\"data\":{\"card_name\":\"Attendance\",\"col\":4}},{\"id\":\"BYh2t1ZRzV\",\"type\":\"card\",\"data\":{\"card_name\":\"Compliances\",\"col\":4}}]",
  "creation": "2023-01-12 09:34:39.795491",
+ "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
@@ -202,10 +203,11 @@
    "type": "Link"
   }
  ],
- "modified": "2023-03-01 10:57:06.922220",
+ "modified": "2023-06-20 09:58:38.474503",
  "modified_by": "Administrator",
  "module": "ERPLite",
  "name": "Changemaker",
+ "number_cards": [],
  "parent_page": "",
  "public": 1,
  "quick_lists": [],
@@ -226,8 +228,22 @@
   {
    "color": "Grey",
    "doc_view": "List",
+   "label": "Employee",
+   "link_to": "Employee",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
    "label": "Travel Request",
    "link_to": "Travel Request",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Overtime Allowance Request",
+   "link_to": "Overtime Allowance Request",
    "type": "DocType"
   },
   {
